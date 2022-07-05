@@ -1,0 +1,213 @@
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/* Utilities */
+.text-gray {
+    color: #44494e !important;
+}
+
+.text-gray-600 {
+    color: #6c757d !important;
+}
+
+.fs-7 {
+    font-size: 0.9rem;
+}
+
+.fs-8 {
+    font-size: 0.8rem;
+}
+
+.lh-0 {
+    line-height: 0;
+}
+
+.bg-red {
+    background-color: #ff7976;
+}
+
+.bg-purple {
+    background-color: #9694ff;
+}
+
+.bg-blue {
+    background-color: #57caeb;
+}
+
+.bg-green {
+    background-color: #5ddab4;
+}
+
+.dir-ltr {
+    direction: ltr;
+}
+
+.btn-light-primary {
+    background-color: #ebf3ff;
+    color: #002152;
+}
+
+/* Override Bootstrap Class */
+.card {
+    border: none !important;
+    border-radius: 0.7rem;
+}
+
+.card-header {
+    padding: 1rem;
+    background-color: #fff;
+    border-bottom: none;
+}
+
+.card-header:first-child {
+    border-radius: 0.7rem;
+}
+
+.breadcrumb a {
+    color: #435ebe;
+    text-decoration: none;
+}
+
+/* Sidebar */
+.admin-sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    background-color: white;
+    transition: all 0.5s ease-out;
+    overflow-y: hidden;
+    z-index: 99;
+    padding: 2rem;
+}
+.admin-sidebar:hover {
+    overflow-y: auto;
+}
+
+.admin-sidebar.inactive {
+    margin-right: -250px;
+}
+
+.admin-sidebar .sidebar-item {
+    margin-top: 0.5rem;
+}
+
+.admin-sidebar .sidebar-item .sidebar-link {
+    text-decoration: none;
+    color: #25396f;
+    padding: 0.7rem 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    transition: all 0.5s;
+}
+
+
+
+.admin-sidebar .sidebar-item .sidebar-link i {
+    color: #7c8db5;
+}
+
+.admin-sidebar .sidebar-item .sidebar-link {
+    cursor: pointer;
+}
+
+.admin-sidebar .sidebar-item.active .sidebar-link {
+    background-color: #435ebe;
+    color: #fff;
+}
+
+.admin-sidebar .sidebar-item.active .sidebar-link i {
+    color: #fff;
+}
+
+.admin-sidebar .submenu {
+    list-style: none;
+}
+
+.admin-sidebar .submenu .submenu-item a {
+    padding: 0.7rem 1rem;
+    display: block;
+    color: #25396f;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.admin-sidebar .submenu .submenu-item a:hover {
+    margin-right: 0.3rem;
+}
+
+.admin-sidebar .sidebar-item .bi-chevron-down {
+    font-size: 0.8rem;
+}
+
+/* Main */
+.main {
+    transition: all 0.5s ease-out;
+}
+
+.main.active {
+    margin-right: 0;
+}
+
+.main .toggle-sidebar-icon {
+    color: #364b98;
+}
+
+.main .header .profile::after {
+    display: none !important;
+}
+
+.main .content .stats-icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .content .stats-icon i {
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+@media (min-width: 992px) {
+    .main {
+        margin-right: 250px;
+    }
+}
+
+[x-cloak] {
+    display: none !important;
+}
+
+
+.router-link-exact-active span {
+    color: white;
+}
+
+.router-link-exact-active p {
+    background-color: #435ebe;
+
+}
